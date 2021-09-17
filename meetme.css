@@ -1,6 +1,6 @@
 
 body{
-    background-image: linear-gradient( -45deg, #614385,  #516395)
+    background-color: #191970;
 
 }
 @keyframes redball{
@@ -11,8 +11,33 @@ body{
 
 }
 #ball{
-    height: 60vh;
-    width:60vw;
+    height: 60px;
+    width:60px;
+    background-color: #20deffce;
+    animation: redball 2s infinite;
+    position: relative;
+    z-index: 0;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    opacity: .4;
+}
+#square2{
+    height: 60px;
+    width:60px;
+    margin-left: 500px;
+    margin-top: 30px;
+    background-color: #20deffce;
+    animation: redball 2s infinite;
+    position: relative;
+    z-index: 0;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    opacity: .4;
+}
+#square{
+    height: 60px;
+    width:60px;
+    margin-left: 200px;
     background-color: #20deffce;
     animation: redball 2s infinite;
     position: relative;
@@ -49,12 +74,10 @@ h1{
     transition: 2s;
     font-size: 60px;
     text-align: left;
-    margin-left: 100px;
     
 }
 h2{
     transition: 2s;
-    margin-left: 100px;
     text-align: left;
 }
 #firstheader{
@@ -69,15 +92,15 @@ h2{
 }
 p, li{
     transition: 2s;
-    
+    list-style-position: inside; padding-left: 0;
     font-size: 20px;
-    margin-left: 100px;
+   
     position: relative;
     list-style:  none;
     text-align: left;
 }
 li{
-    margin-left: 58px;
+    list-style-position: inside; padding-left: 0;
 }
 #entire{
     height: 100vh;
@@ -85,4 +108,6 @@ li{
     position: relative;
     z-index: 1;
     font-family: 'Quicksand',sans-serif;
+    margin-left: 10vw;
+    
 }
