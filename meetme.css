@@ -1,21 +1,25 @@
+
 body{
     background-image: linear-gradient( -45deg, #614385,  #516395)
 
 }
 @keyframes redball{
-    0%{transform: translateX(500px);}
-    40%{transform: translateX(100px) translateY(-100px) translateZ(200px);}
+    0%{transform: translateZ(0px); }
+    10%{transform:  translateY(-100px) translateZ(200px);}
+    20%{transform:  translateY(-500px) translateZ(200px);}
+
+
 }
 #ball{
-    height: 600px;
-    width:600px;
+    height: 60vh;
+    width:60vw;
     background-color: #20deffce;
-    border-radius: 50%;
     animation: redball 2s infinite;
     position: relative;
     z-index: 0;
     filter: blur(7px);
     -webkit-filter: blur(7px);
+    opacity: .4;
 }
 #interest{
     font-size: 40px;
@@ -23,16 +27,17 @@ body{
 #meetjustin{
     transition: 2s;
     position: relative;
+    
 }
 #meetjustin ::after{
     content: "";
     align-items: center;
-    position: absolute;
+    position: relative;
     left: 0;
     width: 100%;
     height: 100%;
     border-right:2px solid #000;
-    animation: type 2s steps(13) infinite;
+    animation: type 2s steps(13) 1;
     
 }
 @keyframes type {
@@ -41,7 +46,6 @@ body{
     }
 }
 h1{ 
-    font-family: 'Cutive Mono', monospace;
     transition: 2s;
     font-size: 60px;
     text-align: left;
@@ -49,15 +53,12 @@ h1{
     
 }
 h2{
-    font-family: 'Cutive Mono', monospace;
     transition: 2s;
     margin-left: 100px;
     text-align: left;
 }
 #firstheader{
-    font-family: 'Cutive Mono', monospace;
     transition: 2s;
-
     text-align: center;
 }
 #backstory{
@@ -67,7 +68,6 @@ h2{
     font-size: 40px;
 }
 p, li{
-    font-family: 'Cutive Mono', monospace;
     transition: 2s;
     
     font-size: 20px;
@@ -76,10 +76,14 @@ p, li{
     list-style:  none;
     text-align: left;
 }
+li{
+    margin-left: 58px;
+}
 #entire{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     z-index: 1;
-    
+    font-family: 'Quicksand',sans-serif;
+    display: flex;
 }
