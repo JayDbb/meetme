@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Palanquin:wght@700&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Palanquin:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="meetme.css">
+  <script src="meetme.js"></script>
    <style>
    ul {
             list-style:none;
@@ -20,16 +21,16 @@
 <body>
 <div id="entire">
 <div id="firstheader">
-    <h1 id="meetjustin"> /meet justin. </h1>
+    <h1 onclick ="show_hide()"> <div id="meetjustin"> <div id='name' onclick="show_hide()">/meet <a>justin.</a></div></div> </h1>
 </div>
 
 
-    <p>I want to be a Software Engineer as I enjoy the responsibilities and tasks accompanied with it</p>
-    <p>I'm not 100% sure as to what aspect specifically of software engineering I want to deal  with but I know I'll do it well</p><br>
+    <p id="intro">I want to be a Software Engineer as I enjoy the responsibilities and tasks accompanied with it</p>
+    <p class="intro">I'm not 100% sure as to what aspect specifically of software engineering I want to deal  with but I know I'll do it well</p><br>
 
     <h1 id="interest">/short lived interests</h1>
     <li>
-        <ul>I <a> drew</a> things... </ul>
+        <ul>I <a id="drew" href='clown.png'> drew</a> things... </ul>
         <ul>I picked up video editing in 8th grade, considering I did it for about 2 years it really shouldn't be on the list.(I wasn't very good)</ul>
         <ul>I dabbled in photoshop.</ul>
         <ul>I tried out digital art, this would be my last short lived interest</ul>
@@ -45,12 +46,13 @@
     <p>I was bored so that's why I made this, I may fix this up some more or I may not, who knows... I have exams this year so I definetly don't :)</p>
 
 </div>
+<div id='circle'></div>
 <div class="particle">
 <a><div id="ball" class="ball"></div>
 <a><div id="square"></div></a>
 
 <a><div id="square2"></div>
-<div id="square3"></div>
+
 </div>
 </body>
 </html>
