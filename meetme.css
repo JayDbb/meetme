@@ -28,20 +28,7 @@ body{
     overflow: hidden;
     box-shadow: 100px;
 }
-#ball{
-    height: 100px;
-    width:100px;
-    margin-left: 200px;
-    background-color: #20ffe1ce;
-    animation: redball 5s  linear infinite;
-    position: relative;
-    z-index: 0;
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
-    opacity: .4;
-    top: 100%;
-    overflow-y: hidden;
-}
+
 a div:nth-child(1) {
     height: 70px;
     width:70px;
