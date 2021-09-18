@@ -87,21 +87,7 @@ a div:nth-child(3) {
     top: 100%;
     overflow-y: hidden;
 }
-a div:last-child {
-    height: 200px;
-    width:200px;
-    margin-left: 100px;
-    background-color: #20ffe1ce;
-    animation: redball 7s  linear infinite;
-    animation-delay: .5s;
-    position: relative;
-    z-index: 0;
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
-    opacity: .4;
-    top: 100%;
-    overflow-y: hidden;
-}
+
 
 a div:last-child {
     height: 200px;
@@ -129,10 +115,10 @@ a div:last-child {
 
 #meetjustin {
     
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(0, 173, 165); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 ; /* Gives that scrolling effect as the typing happens */
+    overflow: hidden; 
+    border-right: .15em solid rgb(0, 173, 165);
+    white-space: nowrap;
+    margin: 0 ; 
     letter-spacing: 2px;
     animation: 
       typing 3.5s steps( 13),
